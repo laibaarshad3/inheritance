@@ -1,12 +1,11 @@
 import argparse
 
+#ArgumentParser is a class provided by the argparse library. It is used to define and manage the command-line arguments
 parser = argparse.ArgumentParser()
 
 parser.add_argument('num' , help='squares the given number' , type = int)
 #The choices parameter specifies a list of valid values that the argument can take.
-
-parser.add_argument('-v' , '--verbose' , help='define a verbose description' ,
-                    type=int , choices=[0 , 1 , 2])
+parser.add_argument('-v' , '--verbose' , help='define a verbose description' ,type=int , choices=[0 , 1 , 2])
  
 args = parser.parse_args()
 

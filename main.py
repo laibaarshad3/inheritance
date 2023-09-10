@@ -16,7 +16,7 @@ args = parser.parse_args()
 print(f"The name of user is {args.name}.")
 print(f"The sum of the number is {args.number+20}.")
 print(f"The city of the user is {args.city}.")
-
+#verbose is optional parameter
 if args.verbose :
     print(f"the square of {args.number} is {args.number**2} .")#use -v or -- verbose in the last of bash
 
